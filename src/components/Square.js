@@ -1,5 +1,9 @@
 import React from 'react';
 
-const Square = () => <div>Game</div>
+const Square = ({value, onClick}) => (
+    <button onClick={onClick}>
+        {value}
+    </button>
+);
 
 export default Square;
