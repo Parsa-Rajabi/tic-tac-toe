@@ -1,9 +1,14 @@
 import React from 'react';
+import { Button } from '@material-ui/core';
+
 
 const Square = ({value, onClick}) => (
-    <button onClick={onClick}>
+    <Button   size = "large"
+              variant = "outlined"
+              color = "primary"
+              onClick={onClick}>
         {value}
-    </button>
+    </Button>
 );
 
 export default Square;
